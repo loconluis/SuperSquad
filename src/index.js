@@ -9,10 +9,9 @@ import rootReducer from './reducers'
 import { addCharacterById } from './actions';
 
 const store = createStore(rootReducer);
-console.log('store: ', store.getState());
 
-store.subscribe( () => console.log('store', store.getState()));
-store.dispatch(addCharacterById(2));
+//store.subscribe( () => console.log('store', store.getState()));
+//store.dispatch(addCharacterById(2));
 
 ReactDOM.render(
   <Provider store={store}>
